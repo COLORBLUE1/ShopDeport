@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="m1"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Editar Producto</ion-title>
+    <ion-buttons slot="end">
+      <ion-button
+        class="botonrecarga"
+        color="success"
+        (click)="updateProducto()"
+        ><p>Guardar</p></ion-button
+      >
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>ID</ion-label>
+    <ion-input [(ngModel)]="producto.ID"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Nombre</ion-label>
+    <ion-input [(ngModel)]="producto.NOMBRE"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Descripción</ion-label>
+    <ion-input [(ngModel)]="producto.DESCRIPCION"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Precio</ion-label>
+    <ion-input type="number" [(ngModel)]="producto.PRECIO"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Unidades</ion-label>
+    <ion-input type="number" [(ngModel)]="producto.UNIDADES"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Marca</ion-label>
+    <ion-input [(ngModel)]="producto.MARCA"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Distribuidor</ion-label>
+    <ion-input [(ngModel)]="producto.DISTRIBUIDOR"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>URL Imagen</ion-label>
+    <ion-input [(ngModel)]="producto.URLIMAGEN"></ion-input>
+  </ion-item>
+</ion-content>

@@ -1,0 +1,145 @@
+/* Hero Section */
+.hero-section {
+  background: url("https://wallpapers.com/images/hd/sports-4k-oxql474zwkep9nzt.jpg")
+  no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: slideInLeft 1.5s ease-out;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  animation: slideInRight 1.5s ease-out;
+}
+
+ion-button {
+  margin-top: 20px;
+  animation: bounceIn 2s;
+}
+
+/* Categories Section */
+.categories {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.category-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 20px;
+  height: 300px;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Products Section */
+.featured-products {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.product-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: grid;
+  padding: 20px;
+  height: 450px;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.footer-links ion-button {
+  margin: 10px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-links ion-button:hover {
+  color: #ff5722;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

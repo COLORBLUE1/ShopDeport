@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="m1"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Editar Provedor</ion-title>
+    <ion-buttons slot="end">
+      <ion-button
+        class="botonrecarga"
+        color="success"
+        (click)="updateProvedor()"
+        ><p>Guardar</p></ion-button
+      >
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>NOMBRE</ion-label>
+    <ion-input [(ngModel)]="provedor.NOMBRE"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>TELEFONO</ion-label>
+    <ion-input [(ngModel)]="provedor.TELEFONO"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>EMAIL</ion-label>
+    <ion-input type="number" [(ngModel)]="provedor.EMAIL"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>DIRECCION</ion-label>
+    <ion-input type="number" [(ngModel)]="provedor.DIRECCION"></ion-input>
+  </ion-item>
+</ion-content>

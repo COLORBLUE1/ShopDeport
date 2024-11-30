@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crear Provedor</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cancel()">Cancelar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="createProvedorForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">NOMBRE</ion-label>
+      <ion-input formControlName="NOMBRE" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">TELEFONO</ion-label>
+      <ion-input formControlName="TELEFONO" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">EMAIL</ion-label>
+      <ion-input formControlName="EMAIL" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">DIRECCION</ion-label>
+      <ion-input formControlName="DIRECCION" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-button
+      expand="full"
+      type="submit"
+      [disabled]="createProvedorForm.invalid"
+    >
+      Crear Provedor
+    </ion-button>
+  </form>
+</ion-content>

@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="m1"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Provedores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Provedores</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-button class="botonrecarga" color="warning" (click)="loadProvedor()"
+  >Recargar Provedores</ion-button
+  >
+  <ion-button class="botonrecarga" color="success" (click)="openCreateModal()"
+  >Añadir Provedor</ion-button
+  >
+
+  <ion-grid>
+    <ion-row>
+      <ion-col><strong>ID</strong></ion-col>
+      <ion-col><strong>Nombre</strong></ion-col>
+      <ion-col><strong>Teléfono</strong></ion-col>
+      <ion-col><strong>Email</strong></ion-col>
+      <ion-col><strong>Dirección</strong></ion-col>
+      <ion-col><strong>Acciones</strong></ion-col>
+    </ion-row>
+
+    <ion-row *ngFor="let provedor of provedores">
+      <ion-col>{{ provedor.ID }}</ion-col>
+      <ion-col>{{ provedor.NOMBRE }}</ion-col>
+      <ion-col>{{ provedor.TELEFONO }}</ion-col>
+      <ion-col>{{ provedor.EMAIL }}</ion-col>
+      <ion-col>{{ provedor.DIRECCION }}</ion-col>
+      <ion-col>
+        <ion-button (click)="editProvedor(provedor)">Editar</ion-button>
+        <ion-button color="danger" (click)="deleteProvedor(provedor.ID)">Eliminar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

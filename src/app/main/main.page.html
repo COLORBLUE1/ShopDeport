@@ -1,0 +1,135 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="m1"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tienda Deportiva</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <h1 class="hero-title">Bienvenidos a tu tienda deportiva favorita</h1>
+      <p class="hero-subtitle">Equipamiento de calidad para todas tus aventuras deportivas</p>
+      <ion-button expand="full" color="primary" [routerLink]="['/productos']">Ver Productos</ion-button>
+    </div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section class="categories">
+    <h2 class="section-title">Categorías Destacadas</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" size-md="3">
+          <ion-card class="category-card">
+            <img src="https://st4.depositphotos.com/1005563/25370/i/450/depositphotos_253702062-stock-photo-sport-equipment-balls-background.jpg" alt="Equipamiento Deportivo" />
+            <ion-card-header>
+              <ion-card-title>Equipos Deportivos</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Encuentra todo lo necesario para practicar tu deporte favorito.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" size-md="3">
+          <ion-card class="category-card">
+            <img src="https://blogscdn.thehut.net/app/uploads/sites/450/2020/01/Ropa-deportiva-2020-mp_1578920857.jpg" alt="Ropa Deportiva" />
+            <ion-card-header>
+              <ion-card-title>Ropa Deportiva</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Ropa cómoda y de alto rendimiento para todas las disciplinas.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" size-md="3">
+          <ion-card class="category-card">
+            <img src="https://us.123rf.com/450wm/tan4ikk/tan4ikk2009/tan4ikk200900048/155959217-accesorios-de-senderismo-sobre-fondo-de-madera.jpg?ver=6" alt="Accesorios" />
+            <ion-card-header>
+              <ion-card-title>Accesorios</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Accesorios deportivos para mejorar tu rendimiento y confort.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" size-md="3">
+          <ion-card class="category-card">
+            <img src="https://imageio.forbes.com/specials-images/imageserve/60f19c9c0af45d5015bdea50/barker-a8U2A0573/960x0.jpg?format=jpg&width=960" alt="Outdoor" />
+            <ion-card-header>
+              <ion-card-title>Outdoor</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Equipos para deportes al aire libre, desde camping hasta ciclismo.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+  <section>
+    <img src="https://wp-s.ru/wallpapers/1/10/375843404153735/victoria-en-el-campeonato-de-f-tbol-de-barcelona.jpg" alt="El rey messi" />
+  </section>
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <h2 class="section-title">Productos Destacados</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" size-md="4">
+          <ion-card class="product-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/%D0%A4%D0%9A_%22%D0%9A%D0%BE%D0%BB%D0%BE%D1%81%22_%28%D0%97%D0%B0%D1%87%D0%B5%D0%BF%D0%B8%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0%2C_%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%29_-_%D0%A4%D0%9A_%22%D0%91%D0%B0%D0%BB%D0%BA%D0%B0%D0%BD%D1%8B%22_%28%D0%97%D0%B0%D1%80%D1%8F%2C_%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%29_%2818790931100%29.jpg" alt="Producto 1" />
+            <ion-card-header>
+              <ion-card-title>Balón de Fútbol</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Perfecto para jugar en cualquier campo. Alta durabilidad y agarre.
+            </ion-card-content>
+            <ion-button fill="solid" [routerLink]="['/productos']">Ver más</ion-button>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" size-md="4">
+          <ion-card class="product-card">
+            <img src="https://tennisworldcolombia.com/wp-content/uploads/2023/11/raquetas-tenis-head-2019.jpg" alt="Producto 2" />
+            <ion-card-header>
+              <ion-card-title>Raqueta de Tenis</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Ideal para jugadores de todos los niveles. Ligera y balanceada.
+            </ion-card-content>
+            <ion-button fill="solid" [routerLink]="['/productos']">Ver más</ion-button>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" size-md="4">
+          <ion-card class="product-card">
+            <img src="https://www.younextbike.com/wp-content/uploads/2018/03/zapatillas-ciclismo-ok.jpg" alt="Producto 3" />
+            <ion-card-header>
+              <ion-card-title>Botas de Ciclismo</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Máxima comodidad y tracción para tus recorridos largos.
+            </ion-card-content>
+            <ion-button fill="solid" [routerLink]="['/productos']">Ver más</ion-button>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <section style="display: flex;">
+    <img src="https://c4.wallpaperflare.com/wallpaper/156/785/272/deportes-esgrima-wallpaper-preview.jpg" alt="Producto 3" />
+    <img src="https://c4.wallpaperflare.com/wallpaper/691/699/624/deporte-luchas-taekwondo-wallpaper-preview.jpg" alt="Ropa Deportiva" />
+  </section>
+  <!-- Footer Section -->
+  <section class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <ion-button [routerLink]="['/productos']">Productos</ion-button>
+        <ion-button [routerLink]="['/provedores']">Proveedores</ion-button>
+        <ion-button [routerLink]="['/contacto']">Contacto</ion-button>
+      </div>
+      <p>&copy; 2024 Tienda Deportiva. Todos los derechos reservados.</p>
+    </div>
+  </section>
+</ion-content>
